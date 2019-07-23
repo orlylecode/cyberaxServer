@@ -1,0 +1,61 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="mise">
+            <h2><span jhiTranslate="cyberaxServerApp.mise.detail.title">Mise</span> {{mise.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="cyberaxServerApp.mise.montant">Montant</span></dt>
+                <dd>
+                    <span>{{mise.montant}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.mise.dateMise">Date Mise</span></dt>
+                <dd>
+                    <span>{{mise.dateMise}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.mise.dateValidation">Date Validation</span></dt>
+                <dd>
+                    <span>{{mise.dateValidation}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.mise.etat">Etat</span></dt>
+                <dd>
+                    <span>{{mise.etat}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.mise.positionClic">Position Clic</span></dt>
+                <dd>
+                    <span>{{mise.positionClic}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.mise.joueur">Joueur</span></dt>
+                <dd>
+                    <div *ngIf="mise.joueur">
+                        <a [routerLink]="['/joueur', mise.joueur?.id, 'view']">{{mise.joueur?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.mise.jeu">Jeu</span></dt>
+                <dd>
+                    <div *ngIf="mise.jeu">
+                        <a [routerLink]="['/jeu', mise.jeu?.id, 'view']">{{mise.jeu?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.mise.listAttente">List Attente</span></dt>
+                <dd>
+                    <div *ngIf="mise.listAttente">
+                        <a [routerLink]="['/list-attente', mise.listAttente?.id, 'view']">{{mise.listAttente?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/mise', mise.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

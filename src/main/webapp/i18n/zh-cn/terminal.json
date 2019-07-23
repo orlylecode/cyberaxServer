@@ -1,0 +1,29 @@
+{
+  "cyberaxServerApp": {
+    "terminal": {
+      "home": {
+        "title": "Terminals",
+        "createLabel": "创建新 Terminal",
+        "createOrEditLabel": "创建或编辑 Terminal",
+        "search": "查找 Terminal",
+        "notFound": "No Terminal found"
+      },
+      "created": "Terminal {{ param }} 创建成功",
+      "updated": "Terminal {{ param }} 更新成功",
+      "deleted": "Terminal {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Terminal {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Terminal"
+      },
+      "message": "Message",
+      "joueur": "Joueur",
+      "jeuxEncour": "Jeux Encour",
+      "jeuPrecedent": "Jeu Precedent",
+      "help": {
+        "message": "The firstname attribute."
+      }
+    }
+  }
+}

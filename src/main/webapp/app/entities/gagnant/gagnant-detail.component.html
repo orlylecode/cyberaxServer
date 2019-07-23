@@ -1,0 +1,53 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="gagnant">
+            <h2><span jhiTranslate="cyberaxServerApp.gagnant.detail.title">Gagnant</span> {{gagnant.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="cyberaxServerApp.gagnant.nom">Nom</span></dt>
+                <dd>
+                    <span>{{gagnant.nom}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.gagnant.prenom">Prenom</span></dt>
+                <dd>
+                    <span>{{gagnant.prenom}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.gagnant.telephone">Telephone</span></dt>
+                <dd>
+                    <span>{{gagnant.telephone}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.gagnant.position">Position</span></dt>
+                <dd>
+                    <span>{{gagnant.position}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.gagnant.dateGain">Date Gain</span></dt>
+                <dd>
+                    <span>{{gagnant.dateGain}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.gagnant.datePayment">Date Payment</span></dt>
+                <dd>
+                    <span>{{gagnant.datePayment}}</span>
+                </dd>
+                <dt><span jhiTranslate="cyberaxServerApp.gagnant.jeu">Jeu</span></dt>
+                <dd>
+                    <div *ngIf="gagnant.jeu">
+                        <a [routerLink]="['/jeu', gagnant.jeu?.id, 'view']">{{gagnant.jeu?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/gagnant', gagnant.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

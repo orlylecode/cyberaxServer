@@ -1,0 +1,30 @@
+{
+  "cyberaxServerApp": {
+    "mise": {
+      "home": {
+        "title": "Mises",
+        "createLabel": "Create a new Mise",
+        "createOrEditLabel": "Create or edit a Mise",
+        "search": "Search for Mise",
+        "notFound": "No Mise found"
+      },
+      "created": "A new Mise is created with identifier {{ param }}",
+      "updated": "A Mise is updated with identifier {{ param }}",
+      "deleted": "A Mise is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mise {{ id }}?"
+      },
+      "detail": {
+        "title": "Mise"
+      },
+      "montant": "Montant",
+      "dateMise": "Date Mise",
+      "dateValidation": "Date Validation",
+      "etat": "Etat",
+      "positionClic": "Position Clic",
+      "joueur": "Joueur",
+      "jeu": "Jeu",
+      "listAttente": "List Attente"
+    }
+  }
+}

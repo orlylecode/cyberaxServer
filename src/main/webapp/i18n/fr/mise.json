@@ -1,0 +1,30 @@
+{
+  "cyberaxServerApp": {
+    "mise": {
+      "home": {
+        "title": "Mises",
+        "createLabel": "Créer un nouveau Mise",
+        "createOrEditLabel": "Créer ou éditer un Mise",
+        "search": "Recherche pour Mise",
+        "notFound": "Aucun Mise trouvé"
+      },
+      "created": "Un nouveau Mise a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mise avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mise avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Mise {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mise"
+      },
+      "montant": "Montant",
+      "dateMise": "Date Mise",
+      "dateValidation": "Date Validation",
+      "etat": "Etat",
+      "positionClic": "Position Clic",
+      "joueur": "Joueur",
+      "jeu": "Jeu",
+      "listAttente": "List Attente"
+    }
+  }
+}

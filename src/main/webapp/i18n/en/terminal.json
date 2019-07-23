@@ -1,0 +1,29 @@
+{
+  "cyberaxServerApp": {
+    "terminal": {
+      "home": {
+        "title": "Terminals",
+        "createLabel": "Create a new Terminal",
+        "createOrEditLabel": "Create or edit a Terminal",
+        "search": "Search for Terminal",
+        "notFound": "No Terminal found"
+      },
+      "created": "A new Terminal is created with identifier {{ param }}",
+      "updated": "A Terminal is updated with identifier {{ param }}",
+      "deleted": "A Terminal is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Terminal {{ id }}?"
+      },
+      "detail": {
+        "title": "Terminal"
+      },
+      "message": "Message",
+      "joueur": "Joueur",
+      "jeuxEncour": "Jeux Encour",
+      "jeuPrecedent": "Jeu Precedent",
+      "help": {
+        "message": "The firstname attribute."
+      }
+    }
+  }
+}

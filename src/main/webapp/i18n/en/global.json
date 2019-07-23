@@ -7,6 +7,12 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "joueur": "Joueur",
+        "mise": "Mise",
+        "jeu": "Jeu",
+        "gagnant": "Gagnant",
+        "listAttente": "List Attente",
+        "terminal": "Terminal",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
