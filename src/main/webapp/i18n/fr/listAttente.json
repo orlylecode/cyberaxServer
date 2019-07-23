@@ -1,0 +1,25 @@
+{
+  "cyberaxServerApp": {
+    "listAttente": {
+      "home": {
+        "title": "ListAttentes",
+        "createLabel": "Créer un nouveau List Attente",
+        "createOrEditLabel": "Créer ou éditer un List Attente",
+        "search": "Recherche pour List Attente",
+        "notFound": "Aucun List Attente trouvé"
+      },
+      "created": "Un nouveau List Attente a été créé avec l'identifiant {{ param }}",
+      "updated": "Le List Attente avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le List Attente avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le List Attente {{ id }} ?"
+      },
+      "detail": {
+        "title": "List Attente"
+      },
+      "version": "Version",
+      "dateCreation": "Date Creation",
+      "mises": "Mises"
+    }
+  }
+}

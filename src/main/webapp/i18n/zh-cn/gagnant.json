@@ -1,0 +1,29 @@
+{
+  "cyberaxServerApp": {
+    "gagnant": {
+      "home": {
+        "title": "Gagnants",
+        "createLabel": "创建新 Gagnant",
+        "createOrEditLabel": "创建或编辑 Gagnant",
+        "search": "查找 Gagnant",
+        "notFound": "No Gagnant found"
+      },
+      "created": "Gagnant {{ param }} 创建成功",
+      "updated": "Gagnant {{ param }} 更新成功",
+      "deleted": "Gagnant {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Gagnant {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Gagnant"
+      },
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "telephone": "Telephone",
+      "position": "Position",
+      "dateGain": "Date Gain",
+      "datePayment": "Date Payment",
+      "jeu": "Jeu"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "cyberaxServerApp": {
+    "mise": {
+      "home": {
+        "title": "Mises",
+        "createLabel": "创建新 Mise",
+        "createOrEditLabel": "创建或编辑 Mise",
+        "search": "查找 Mise",
+        "notFound": "No Mise found"
+      },
+      "created": "Mise {{ param }} 创建成功",
+      "updated": "Mise {{ param }} 更新成功",
+      "deleted": "Mise {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Mise {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Mise"
+      },
+      "montant": "Montant",
+      "dateMise": "Date Mise",
+      "dateValidation": "Date Validation",
+      "etat": "Etat",
+      "positionClic": "Position Clic",
+      "joueur": "Joueur",
+      "jeu": "Jeu",
+      "listAttente": "List Attente"
+    }
+  }
+}

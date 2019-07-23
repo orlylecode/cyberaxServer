@@ -1,0 +1,25 @@
+{
+  "cyberaxServerApp": {
+    "listAttente": {
+      "home": {
+        "title": "List Attentes",
+        "createLabel": "List Attente erstellen",
+        "createOrEditLabel": "List Attente erstellen oder bearbeiten",
+        "search": "Suche nach List Attente",
+        "notFound": "No List Attente found"
+      },
+      "created": "List Attente erstellt mit ID {{ param }}",
+      "updated": "List Attente aktualisiert mit ID {{ param }}",
+      "deleted": "List Attente gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll List Attente {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "List Attente"
+      },
+      "version": "Version",
+      "dateCreation": "Date Creation",
+      "mises": "Mises"
+    }
+  }
+}

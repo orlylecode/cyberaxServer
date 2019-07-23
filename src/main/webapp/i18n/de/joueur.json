@@ -1,0 +1,26 @@
+{
+  "cyberaxServerApp": {
+    "joueur": {
+      "home": {
+        "title": "Joueurs",
+        "createLabel": "Joueur erstellen",
+        "createOrEditLabel": "Joueur erstellen oder bearbeiten",
+        "search": "Suche nach Joueur",
+        "notFound": "No Joueur found"
+      },
+      "created": "Joueur erstellt mit ID {{ param }}",
+      "updated": "Joueur aktualisiert mit ID {{ param }}",
+      "deleted": "Joueur gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Joueur {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Joueur"
+      },
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "telephone": "Telephone",
+      "mises": "Mises"
+    }
+  }
+}
