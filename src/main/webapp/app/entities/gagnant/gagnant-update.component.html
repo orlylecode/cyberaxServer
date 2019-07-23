@@ -1,0 +1,70 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-gagnant-heading" jhiTranslate="cyberaxServerApp.gagnant.home.createOrEditLabel">Create or edit a Gagnant</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!editForm.get('id').value">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.nom" for="field_nom">Nom</label>
+                    <input type="text" class="form-control" name="nom" id="field_nom"
+                           formControlName="nom"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.prenom" for="field_prenom">Prenom</label>
+                    <input type="text" class="form-control" name="prenom" id="field_prenom"
+                           formControlName="prenom"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.telephone" for="field_telephone">Telephone</label>
+                    <input type="text" class="form-control" name="telephone" id="field_telephone"
+                           formControlName="telephone"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.position" for="field_position">Position</label>
+                    <input type="number" class="form-control" name="position" id="field_position"
+                           formControlName="position"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.dateGain" for="field_dateGain">Date Gain</label>
+                    <div class="d-flex">
+                        <input id="field_dateGain" type="datetime-local" class="form-control" name="dateGain" formControlName="dateGain" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.datePayment" for="field_datePayment">Date Payment</label>
+                    <div class="d-flex">
+                        <input id="field_datePayment" type="datetime-local" class="form-control" name="datePayment" formControlName="datePayment" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.jeu" for="field_jeu">Jeu</label>
+                    <select class="form-control" id="field_jeu" name="jeu" formControlName="jeu">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="jeuOption.id === editForm.get('jeu').value?.id ? editForm.get('jeu').value : jeuOption" *ngFor="let jeuOption of jeus; trackBy: trackJeuById">{{jeuOption.id}}</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="cyberaxServerApp.gagnant.jeu" for="field_jeu">Jeu</label>
+                    <select class="form-control" id="field_jeu" name="jeu" formControlName="jeu">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="jeuOption.id === editForm.get('jeu').value?.id ? editForm.get('jeu').value : jeuOption" *ngFor="let jeuOption of jeus; trackBy: trackJeuById">{{jeuOption.id}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
