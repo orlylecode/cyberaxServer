@@ -1,0 +1,30 @@
+{
+  "cyberaxServerApp": {
+    "jeu": {
+      "home": {
+        "title": "Jeus",
+        "createLabel": "创建新 Jeu",
+        "createOrEditLabel": "创建或编辑 Jeu",
+        "search": "查找 Jeu",
+        "notFound": "No Jeu found"
+      },
+      "created": "Jeu {{ param }} 创建成功",
+      "updated": "Jeu {{ param }} 更新成功",
+      "deleted": "Jeu {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Jeu {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Jeu"
+      },
+      "dateCreation": "Date Creation",
+      "dateLancement": "Date Lancement",
+      "dateCloture": "Date Cloture",
+      "encour": "Encour",
+      "pourcentageMise": "Pourcentage Mise",
+      "pourcentageRebourt": "Pourcentage Rebourt",
+      "mises": "Mises",
+      "gagnants": "Gagnants"
+    }
+  }
+}

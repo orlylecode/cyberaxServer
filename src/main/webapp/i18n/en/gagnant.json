@@ -1,0 +1,30 @@
+{
+  "cyberaxServerApp": {
+    "gagnant": {
+      "home": {
+        "title": "Gagnants",
+        "createLabel": "Create a new Gagnant",
+        "createOrEditLabel": "Create or edit a Gagnant",
+        "search": "Search for Gagnant",
+        "notFound": "No Gagnant found"
+      },
+      "created": "A new Gagnant is created with identifier {{ param }}",
+      "updated": "A Gagnant is updated with identifier {{ param }}",
+      "deleted": "A Gagnant is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Gagnant {{ id }}?"
+      },
+      "detail": {
+        "title": "Gagnant"
+      },
+      "nom": "Nom",
+      "prenom": "Prenom",
+      "telephone": "Telephone",
+      "position": "Position",
+      "dateGain": "Date Gain",
+      "datePayment": "Date Payment",
+      "jeu": "Jeu",
+      "jeu": "Jeu"
+    }
+  }
+}

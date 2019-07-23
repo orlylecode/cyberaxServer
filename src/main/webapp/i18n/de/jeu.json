@@ -1,0 +1,30 @@
+{
+  "cyberaxServerApp": {
+    "jeu": {
+      "home": {
+        "title": "Jeus",
+        "createLabel": "Jeu erstellen",
+        "createOrEditLabel": "Jeu erstellen oder bearbeiten",
+        "search": "Suche nach Jeu",
+        "notFound": "No Jeu found"
+      },
+      "created": "Jeu erstellt mit ID {{ param }}",
+      "updated": "Jeu aktualisiert mit ID {{ param }}",
+      "deleted": "Jeu gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Jeu {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Jeu"
+      },
+      "dateCreation": "Date Creation",
+      "dateLancement": "Date Lancement",
+      "dateCloture": "Date Cloture",
+      "encour": "Encour",
+      "pourcentageMise": "Pourcentage Mise",
+      "pourcentageRebourt": "Pourcentage Rebourt",
+      "mises": "Mises",
+      "gagnants": "Gagnants"
+    }
+  }
+}
